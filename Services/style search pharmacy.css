@@ -1,0 +1,21 @@
+body::after {
+    content: "";
+    background: url(pharmacyback.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.form-row {
+    position: relative;
+    top: 50%;
+    padding-top: 30%;
+    padding-left: -50%;
+    font-weight: bold;
+}

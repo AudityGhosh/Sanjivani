@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Medicine list</title>
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .topnav .search-container {
+            float: right;
+        }
+        
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+        
+        .topnav .search-container button {
+            float: right;
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+        
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+        
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+        
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 20%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 33.333%;
+                margin: 6px 0;
+            }
+            .topnav .search-container {
+                float: none;
+            }
+            .topnav a,
+            .topnav input[type=text],
+            .topnav .search-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+        
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#medicine">Medicine</a>
+        <a href="BabyCare.html">Baby Care</a>
+        <a href="Feminine Hygiene.html">Feminine Hygiene</a>
+        <a href="health hygiene products.html">Health</a>
+
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <h2 style="text-align: center;padding: 16px;">Medicines At Stock</h2>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc1.jpg">
+                <img src="napa-extra.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+
+            </a>
+            <div class="desc">Napa Extra Tablet 500mg
+                <br> Unit Price: ৳ 2.49 (240's pack: ৳ 598.70)</div>
+
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc1.jpg">
+                <img src="AmdocalPlus-600x600.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">Amdocal Plus Tablet 50 mg<br> Unit Price: ৳ 6.00 (60's pack: ৳ 360.18) </div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <img src="thyrox.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">Thyrox Tablet 50mg
+                <br> Unit Price: ৳ 2.00 (90's pack: ৳ 180.09)
+            </div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc1.jpg">
+                <img src="lijenta.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">Lijenta-M Tablet 850mg
+                <br> Unit Price: ৳ 14.00 (32's pack: ৳ 448.00)</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <img src="ranidin.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">Ranidin Tablet 150 mg
+                <br> Unit Price: ৳ 3.00 (150's pack: ৳ 450.00)</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc1.jpg">
+                <img src="seclo.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+
+            </a>
+            <div class="desc"> Seclo Capsule 20 mg
+                <br> Unit Price: ৳ 6.00 (120's pack: ৳ 720.00)</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc2.jpg">
+                <img src="ace.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">Ace Oral Suspension
+
+
+                <br> 60 ml bottle: ৳ 20.70<br>100 ml bottle: ৳ 31.88</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc2.jpg">
+                <img src="flagyl.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">Flagyl Tablet 400 mg
+                <br> Unit Price: ৳ 1.58 (300's pack: ৳ 474.00)</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc2.jpg">
+                <img src="Mucolyt-100ml.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">Mucolyt Syrup
+                <br> 100 ml bottle: ৳ 40.00<br> 200 ml bottle: ৳ 75.00</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc2.jpg">
+                <img src="normens.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">Normens Tablet 5 mg
+                <br> Unit Price: ৳ 5.50 (100's pack: ৳ 549.62)</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc2.jpg">
+                <img src="Ceevit_large.png" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">Ceevit Chewable Tablet 250 mg
+                <br> Unit Price: ৳ 1.90 (250's pack: ৳ 475.00)</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc2.jpg">
+                <img src="giane.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">Giane Tablet 35mg
+                <br> Unit Price: ৳ 9.50 (21's pack: ৳ 199.46)</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc2.jpg">
+                <img src="azithromycin.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">
+                Azithromycin 500 mg
+                <br> Unit Price: ৳ 35.00 (12's pack: ৳ 420.00)</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc2.jpg">
+                <img src="Tenoren-50.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">Tenoren Tablet 50 mg
+                <br> Unit Price: ৳ 0.77 (100's pack: ৳ 77.00)</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="doc2.jpg">
+                <img src="Rostatin-20.jpg" alt="Cinque Terre" width="600" height="400">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+            </a>
+            <div class="desc">Rostatin Tablet 20 mg
+                <br> Unit Price: ৳ 15.05 (28's pack: ৳ 421.40)</div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

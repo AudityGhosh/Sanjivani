@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Health tips</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="icon" href="../Icons/favicon.ico" sizes="16x16">
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Poppins", sans-serif
+    }
+    
+    body {
+        font-size: 16px;
+    }
+    
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+    
+    .w3-half img:hover {
+        opacity: 1
+    }
+    
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    
+    .mySlides {
+        display: none;
+    }
+</style>
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-64"><b>Sanjivani</b></h3>
+        </div>
+        <div class="w3-bar-block">
+
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">HEALTH TIPS</a>
+            <a href="#physical" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PHYSICAL HEALTH</a>
+
+            <a href="#mental" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">MENTAL HEALTH</a>
+
+            <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">GO TO SERVICES</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+        <span>Sanjivani</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:60px" id="showcase">
+
+            <h1 class="w3-xxlarge"><b>Health Tips</b></h1>
+            <hr style="width:50px;border:5px solid green" class="w3-round">
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" src="dailytips1.jpg" style="width:100%">
+                <img class="mySlides" src="dailytips2.jpg" style="width:100%">
+                <img class="mySlides" src="dailytips3.jpg" style="width:100%">
+                <img class="mySlides" src="dailytips4.jpg" style="width:100%">
+                <img class="mySlides" src="dailytips5.jpg" style="width:100%">
+                <img class="mySlides" src="dailytips6.jpg" style="width:100%">
+                <img class="mySlides" src="dailytips7.jpg" style="width:100%">
+                <img class="mySlides" src="dailytips8.jpg" style="width:100%">
+
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+            </script>
+
+        </div>
+
+
+
+
+
+
+
+        <!-- physical -->
+        <div class="w3-container" id="physical" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-black"><b>Physical Health</b></h1>
+            <hr style="width:50px;border:5px solid green" class="w3-round">
+            <div class="w3-content w3-display-container">
+                <div class="w3-row-padding">
+
+                    <div class="w3-third w3-container w3-margin-bottom">
+                        <img src="plank-cartoon-test.png" alt="Norway" style="width:100%;height:100%;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <h4>
+                                <b>
+                                    Plank
+                                </b>
+                            </h4>
+                            <p>What can be better than plank? Sit on your yoga mat or carpet. Then lie on your front with your forearms on the floor, toes tucked under, and then pull up your bodyweight. Keep your body in a straight line – don’t sag in the
+                                middle. Keep your core tight. Hold for few minutes and rest!</p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="w3-third w3-container w3-margin-bottom">
+                        <img src="shoulder-stretch.jpg" alt="Norway" style="width:100%;height:100%;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <h4><b>Shoulder-stretch</b></h4>
+                            <p>In this, you have to sit on the ground with the waist straight and hold the elbow of the left hand with the right hand at the back. Take your arms to the back so that it feels in the chest. Hold yourself in this position for
+                                10 seconds and then come to the first stage.</p>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="w3-third w3-container">
+                        <img src="burpee.jpg" alt="Norway" style="width:100%;height:100%;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <h4>
+                                <b>
+                                    Burpee
+                                </b>
+                            </h4>
+                            <p>For this exercise lie down on the ground and get back up quickly. You have to repeat this process at least 5 times in a row. Do this continuously for 2 minutes. If you feel tired, then take 10 seconds break in between.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w3-row-padding">
+
+                    <div class="w3-third w3-container w3-margin-bottom">
+                        <img src="squats.jpg" alt="Norway" style="width:100%;height:100%;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <h4>
+                                <b>
+                                   Squats
+                                </b>
+                            </h4>
+                            <p>To do this, keep both arms open in the front and stand up straight. Now bend your knees and pose to sit as if you are sitting on a chair. Start with 10 squats in one set and then slowly increase the number to 15-20. Do 3 sets.</p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="w3-third w3-container w3-margin-bottom">
+                        <img src="pushup.jpg" alt="Norway" style="width:100%;height:100%;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <h4><b>Push-up</b></h4>
+                            <p>It is beneficial for both upper body and core strength. Push-ups are great for triceps, back, and shoulders. It also helps in boosting blood circulation in the body.</p>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="w3-third w3-container">
+                        <img src="skipping.jpg" alt="Norway" style="width:100%;height:100%;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <h4>
+                                <b>
+                                    Skipping
+                                </b>
+                            </h4>
+                            <p>Skipping with a rope is a great cardio exercise. You do need a bit more space for this. It’s an easy way to get the heart rate up. Try to do skipping in sets so that you have time to take rest in between.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--Mental-->
+
+        <div class="w3-container" id="mental" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-black"><b>Mental Health</b></h1>
+            <hr style="width:50px;border:5px solid green" class="w3-round">
+
+            <p>
+
+                This meditation exercise is an excellent introduction to meditation techniques. Sit or lie comfortably. You may even want to invest in a meditation chair or cushion. Close your eyes. We recommend using one of our Cooling Eye Masks or Restorative Eye Pillows
+                if lying down. Make no effort to control the breath; simply breathe naturally. Focus your attention on the breath and on how the body moves with each inhalation and exhalation. Notice the movement of your body as you breathe. Observe your
+                chest, shoulders, rib cage, and belly. Simply focus your attention on your breath without controlling its pace or intensity. If your mind wanders, return your focus back to your breath. Maintain this meditation practice for two to three
+                minutes to start, and then try it for longer periods.
+            </p>
+            <img src="meditation.jpg">
+        </div>
+
+
+
+
+
+        <!-- End page content -->
+    </div>
+
+    <!-- W3.CSS Container -->
+
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+</body>
+
+</html>

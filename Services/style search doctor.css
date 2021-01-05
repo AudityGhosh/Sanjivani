@@ -1,0 +1,25 @@
+body::after {
+    content: "";
+    background: url(searchDoctor.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.form {
+    position: relative;
+    top: 50%;
+    padding-top: 30%;
+    font-weight: bold;
+}
+
+select {
+    width: 150px;
+    margin: 10px;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<title>Services Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="../Icons/favicon.ico" sizes="16x16">
+
+<style>
+    body {
+        background: linear-gradient(to right, #EFE9F4, #5078F2);
+        font-family: "Raleway", sans-serif
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+
+<body class="w3-container" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <img src="../Home/Logo.png" style="width:45%;" class="w3-round"><br><br>
+            <h4><b>Sanjivani</b></h4>
+
+
+        </div>
+
+        <div class="w3-bar-block">
+            <a href="#All Services" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">All services</a>
+            <a href="search nearest hospital page.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Hospitals' Information</a>
+            <a href="search your doctor.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Doctors' Details</a>
+            <a href="search pharmacy.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Online Pharmacy</a>
+            <a href="ambulance services.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Emergency Ambulance</a>
+            <a href="#Medicine & Vaccine Reminder" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Medicine & Vaccine Reminder</a>
+            <a href="health tips home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Health Tips</a>
+        </div>
+
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Header -->
+        <header id="Services">
+            <a href="#"><img src="../Home/Logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+            <div class="w3-container">
+                <h1><b>Services</b></h1>
+                <div class="w3-section">
+
+                    <a href="../Home/index.html"><button class="w3-button w3-white">Home</button></a>
+                    <button class="w3-button w3-black">Services</button>
+                    <a href="../About Us/about us.html"><button class="w3-button w3-white">About Us</button></a>
+                    <button class="w3-button w3-white">Log In</button>
+                    <button class="w3-button w3-white">Sign Up</button>
+                    <a href="../Contact Us/contact us page.html"><button class="w3-button w3-white">Contact Us</button></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding">
+            <a href="search nearest hospital page.html">
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <img src="Hospital information services page.jpg" alt="Norway" style="width:100%;height:100%;" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Hospital Information</b></p>
+
+                    </div>
+                </div>
+            </a>
+            <a href="search your doctor.html">
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <img src="Doctor Details.jpg" alt="Norway" style="width:100%;height:100%;" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Doctors' Details</b></p>
+
+                    </div>
+                </div>
+
+            </a>
+
+            <a href="search pharmacy.html">
+                <div class="w3-third w3-container">
+                    <img src="online-pharmacy.jpg" alt="Norway" style="width:100%;height:100%;" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Online Pharmacy</b></p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding">
+            <a href="ambulance services.html">
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <img src="ambulance.jpg" alt="Norway" style="width:100%;height:100%;" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Emergency ambulance</b></p>
+
+                    </div>
+                </div>
+            </a>
+            <div class="w3-third w3-container w3-margin-bottom">
+                <img src="medicine and vaccine reminder.jpg" alt="Norway" style="width:100%;height:100%;" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Medicine & Vaccine Reminder</b></p>
+
+                </div>
+            </div>
+            <a href="health tips home.html">
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <img src="health tips.jpg" alt="Norway" style="width:100%;height:100%;" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Health Tips</b></p>
+
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../Home/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Icons/favicon.ico" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        body::after {
+            content: "";
+            background: url(ambulance-back.jpg);
+            background-repeat: repeat;
+            background-size: 100%;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+        
+        #myInput {
+            background-image: url(search-icon.png);
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+        
+        #myTable {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+            font-size: 18px;
+        }
+        
+        #myTable th,
+        #myTable td {
+            text-align: left;
+            padding: 12px;
+        }
+        
+        #myTable tr {
+            border-bottom: 1px solid #ddd;
+        }
+        
+        #myTable tr.header,
+        #myTable tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h2 style="padding-top:20px;text-align: center;padding-bottom: 20px;">Emergency Ambulance Numbers</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by place.." title="Type in a name">
+
+
+    <table id="myTable">
+        <tr class="header">
+            <th style="width:30%;">Name</th>
+            <th style="width:40%;">Address</th>
+            <th style="width:30%;">Numbers</th>
+        </tr>
+        <tr>
+            <td>NHFH Ambulance Service</td>
+
+            <td>Plot-7/2, Section-2, Mirpur</td>
+            <td>01712-367859</td>
+        </tr>
+        <tr>
+            <td>
+                Shatota ambulance service
+
+            </td>
+            <td>Islami Bank Hospital purobi , Mirpur 11</td>
+            <td>01728-215630</td>
+        </tr>
+        <tr>
+            <td>Uttara Ambulance Service And Freezer Ambulance</td>
+            <td>
+                9 Gareeb-e-Nawaz Ave,Sector-11,Uttara
+            </td>
+
+            <td>01778-713649</td>
+        </tr>
+        <tr>
+            <td>ABC Ambulance</td>
+            <td>
+                House no 03, road no 13, Jashimuddin Ave,Uttara
+            </td>
+
+            <td>01735-201528
+            </td>
+        </tr>
+        <tr>
+            <td>Conscious Ambulance Service</td>
+            <td>
+                Zigatola Bus Stand
+            </td>
+
+            <td>01912-603094
+            </td>
+        </tr>
+        <tr>
+            <td>Yeasin Ambulance Service</td>
+            <td>
+                52/a , Dolphin Goli, Panthapath
+            </td>
+
+            <td> 01712-244294
+            </td>
+        </tr>
+        <tr>
+            <td>24 ambulance service</td>
+            <td>
+                250 Moghbazar Rd
+            </td>
+
+            <td> 01911-125156
+            </td>
+        </tr>
+        <tr>
+            <td>Jamuna Ambulance</td>
+            <td>
+                43/R/R-5 A.C.N.S Tower , West Pantho Path Bir Uttam Kazi Nuruzamman Road Dhaka, 1205
+
+
+            </td>
+
+            <td> 01714-360988
+            </td>
+        </tr>
+        <tr>
+            <td>
+                M ICU AMBULANCE SERVICE
+
+                <td>61 Green Rd</td>
+                <td>
+                    01716-269038
+                </td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Zoom Ambulance Service in Dhaka
+                <td>
+                    House # 15/E, Sobhanbag Rd
+                </td>
+
+                <td>01715-942067</td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ahad ambulance service</td>
+
+            <td>
+                Near of Holy family hospital, Eskaton Garden Rd
+            </td>
+            <td>
+                01767-732599
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                Khaled Ambulance Service
+            </td>
+            <td>
+                67 Motijheel Rd
+            </td>
+            <td>
+                01933-246577
+            </td>
+        </tr>
+        <tr>
+            <td>
+                S.S. Ambulance Service
+            </td>
+            <td>
+                19/1, Concord Tower, West Panthpath, Opposite Square Hoapital
+            </td>
+            <td>
+                01812-906091
+            </td>
+        </tr>
+        <tr>
+            <td>
+                WeCare4u 24/7
+            </td>
+            <td>
+                B/37 Zakir Hossain Road
+            </td>
+            <td>
+                01842-227348
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Trust Ambulance
+            </td>
+            <td>
+                Polashi Bazar, Dhakeshwari Rd
+            </td>
+            <td>
+                01926-152464
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ambulance BD Rental
+            </td>
+            <td>
+                8/5 Tajmahal Road Dhaka 1207 Tajmahal Rd
+            </td>
+            <td>
+                01778-713649
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Upoma ambulance service
+            </td>
+            <td>
+                Shonir Akhra Dhaka-Chittagong, Highway Mukti Sharani, Dhaka
+            </td>
+            <td>
+                01713-543905
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Mahim ICU Ambulance Service
+            </td>
+            <td>
+                Shahid Shahabuddin Shorok
+            </td>
+            <td>
+                01774-983692
+            </td>
+        </tr>
+        <tr>
+            <td>
+                URAL EMS
+            </td>
+            <td>
+                House#365(3rd floor), Road#28 Mohakhali DOHS
+            </td>
+            <td>
+                01969-906555
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Apollo Ambulance service bd
+            </td>
+            <td>
+                Satrasta Bus Stoppage, Shaheed Tajuddin Ahmed Ave
+            </td>
+            <td>
+                01937-066153
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Criticare EMS
+            </td>
+            <td>
+                A.K Complex (2nd Fl), 19, Green Road
+            </td>
+            <td>
+                01711191947
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Metro Ambulance Service
+            </td>
+            <td>
+                H- 83 (new), R- 8/A, Dhanmondi
+            </td>
+            <td>
+                01714088974
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Uttarbango Ambulance Service
+            </td>
+            <td>
+                94, West Dhanmondi Sankar
+            </td>
+            <td>
+                0176502347
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
